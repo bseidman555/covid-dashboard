@@ -1,0 +1,32 @@
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  background-color: #191b1f;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.statistic {
+  font-size: 40px;
+}
+
+.statistic-title {
+  padding-top: 10px;
+  font-size: 20px;
+}

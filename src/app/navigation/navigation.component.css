@@ -1,0 +1,29 @@
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #101114;
+  padding: 10px 0;
+}
+
+.nav-icon {
+  padding: 0 14px;
+}
+
+.nav-spacer {
+  flex: 1 1 auto;
+}
+
+/* logo */
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+#logo {
+  width: 180px;
+}
+
+#sub-logo {
+  width: 80px;
+  padding-left: 5px;
+}

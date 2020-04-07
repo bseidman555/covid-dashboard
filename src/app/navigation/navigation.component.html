@@ -1,0 +1,39 @@
+<mat-toolbar class="toolbar">
+  <mat-toolbar-row>
+    <div class="logo-wrapper">
+      <img
+        src="../../assets/logo/PANDEMONIUM_c.png"
+        alt="pandemonium logo"
+        id="logo"
+      />
+      <img
+        src="../../assets/logo/COVIDTRACKER.png"
+        alt="covid tracker"
+        id="sub-logo"
+      />
+    </div>
+    <span class="nav-spacer"></span>
+    <button mat-icon-button>
+      <mat-icon
+        class="nav-icon"
+        aria-hidden="false"
+        aria-label="Example help icon"
+        >help_outline</mat-icon
+      >
+    </button>
+    <button
+      mat-icon-button
+      routerLink="/login"
+      routerLinkActive="router-link-active"
+    >
+      <mat-icon
+        class="nav-icon"
+        aria-hidden="false"
+        aria-label="Example logout icon"
+        >logout</mat-icon
+      >
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<!-- Add Content Here -->
+<router-outlet></router-outlet>
