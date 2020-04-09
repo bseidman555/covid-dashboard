@@ -2,6 +2,7 @@ import { Component } from "@angular/core";
 import { BreakpointObserver, Breakpoints } from "@angular/cdk/layout";
 import { Observable } from "rxjs";
 import { map, shareReplay } from "rxjs/operators";
+import { ClickService } from '../click.service'
 
 @Component({
   selector: "app-navigation",
@@ -9,5 +10,13 @@ import { map, shareReplay } from "rxjs/operators";
   styleUrls: ["./navigation.component.css"]
 })
 export class NavigationComponent {
-  constructor() {}
+  constructor(private ClickService: ClickService) {}
+ 
+  ontourClick(){
+
+    this.ClickService.onClick()
+    console.log('button clicked')
+  }
+  
+
 }

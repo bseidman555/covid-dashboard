@@ -20,12 +20,8 @@ export class BarComponent implements OnInit {
     let confirmedArray = res['data'].map(res => res.latest_data.confirmed);
     confirmedArray.sort((n1,n2) => n1 - n2);
   
-    //console.log(confirmedArray);
 
     let topfiveArray = confirmedArray.slice(-5);
-    //console.log(topfiveArray);
-
-     //this.dataSource.dataset.push({seriesname: "Confirmed", data: [{value: sliceArray}] })
 
     this.dataSource.dataset.push({seriesname: "Confirmed", data: [{value: topfiveArray[4] }, 
     {value: topfiveArray[3]},
@@ -48,9 +44,6 @@ export class BarComponent implements OnInit {
 
     let topfiveArray = deathArray.slice(-5);
 
-    console.log(deathArray);
-    console.log(topfiveArray);
-
     this.dataSource.dataset.push({seriesname: "Deaths", data: [{value: topfiveArray[4] }, 
     {value: topfiveArray[3]},
     {value: topfiveArray[2]},
@@ -70,9 +63,6 @@ export class BarComponent implements OnInit {
 
     let topfiveArray = recoveredArray.slice(-5);
 
-    console.log(recoveredArray);
-    console.log(topfiveArray);
-
     this.dataSource.dataset.push({seriesname: "Recovered", data: [{value: topfiveArray[4] }, 
     {value: topfiveArray[3]},
     {value: topfiveArray[2]},
@@ -85,7 +75,6 @@ export class BarComponent implements OnInit {
   }
 
 
-  //stringArray: Object;
   chartConfig: Object;
 
   constructor( private service: BarService) { }
