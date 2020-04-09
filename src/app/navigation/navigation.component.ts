@@ -15,7 +15,6 @@ export class NavigationComponent {
   ontourClick(){
 
     this.ClickService.onClick()
-    console.log('button clicked')
   }
   
 
