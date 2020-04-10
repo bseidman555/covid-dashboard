@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { map } from "rxjs/operators";
+import {TourService} from 'ng3-tour';
 
 @Component({
   selector: "app-dashboard",
@@ -7,5 +8,8 @@ import { map } from "rxjs/operators";
   styleUrls: ["./dashboard.component.css"]
 })
 export class DashboardComponent {
-  constructor() {}
+  constructor() { }
+
+
 }
+
