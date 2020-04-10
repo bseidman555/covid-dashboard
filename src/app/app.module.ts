@@ -26,6 +26,9 @@ import { MatSelectModule } from "@angular/material/select";
 import { MatRadioModule } from "@angular/material/radio";
 import { BarService } from "./bar/bar.service"; 
 import { HttpClientModule } from "@angular/common/http";
+import {AngularTourModule} from 'ng3-tour';
+import { ClickService } from './click.service'
+
 
 /* Fusion Charts Imports */
 import { FusionChartsModule } from "angular-fusioncharts";
@@ -79,9 +82,10 @@ FusionChartsModule.fcRoot(
     MatInputModule,
     MatSelectModule,
     MatRadioModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularTourModule.forRoot()
   ],
-  providers: [BarService],
+  providers: [BarService, ClickService ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
