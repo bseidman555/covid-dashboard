@@ -18,7 +18,7 @@ export class PieComponent implements OnInit {
         "subCaption": "by percentage of total infections reported",
         "animation": true,
         "animateClockwise": true,
-        "bgColor": '#000000',
+        "bgColor": '#191B1F',
         "baseFontSize": 10,
         "plottooltext": "<b>$percentValue</b> of coronavirus infections are in $label at $value cases",
         "showPercentValues": "1",
@@ -55,7 +55,7 @@ export class PieComponent implements OnInit {
         "pieSliceDepth": 20,
         "enableSmartLabels": true,
         "showPlotBorder": true,
-        "showBorder": 1,
+        "showBorder": 0,
         "subCaptionFontSize": 10,
         "subCaptionFontColor": "FFE4B5",
         "user3DLighting": true,
@@ -68,7 +68,7 @@ export class PieComponent implements OnInit {
         "plotBorderHoverDashLen": 6,
         "plotBorderHoverDashGap": 2,
         "plotHighlightEffect": "fadeout|color=#000000, alpha=60",
-        "thousandSeparatorPosition": "2,3"  
+        "thousandSeparatorPosition": "2,3"
       },
       "data": [{
         "label": "Italy",
@@ -82,7 +82,7 @@ export class PieComponent implements OnInit {
         "label": "United States",
         "value": "379000",
         "color": "#FF6347"
-        
+
       }, {
         "label": "China",
         "value": "82509",
