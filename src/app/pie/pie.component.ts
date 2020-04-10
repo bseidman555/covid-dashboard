@@ -68,7 +68,7 @@ export class PieComponent implements OnInit {
         "plotBorderHoverDashLen": 6,
         "plotBorderHoverDashGap": 2,
         "plotHighlightEffect": "fadeout|color=#000000, alpha=60",
-        "thousandSeparatorPosition": "2,3"  
+        "thousandSeparatorPosition": "2,3"
       },
       "data": [{
         "label": "Italy",
@@ -82,7 +82,7 @@ export class PieComponent implements OnInit {
         "label": "United States",
         "value": "379000",
         "color": "#FF6347"
-        
+
       }, {
         "label": "China",
         "value": "82509",
